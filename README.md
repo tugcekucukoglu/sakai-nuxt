@@ -11,7 +11,7 @@ npm install primevue @primevue/themes tailwindcss-primeui primeicons
 npm install --save-dev @primevue/nuxt-module
 ```
 
-3) Add to nuxt.config.js
+3) Add to `nuxt.config.js`
 ```javascript
 modules: [
     '@primevue/nuxt-module',
@@ -20,24 +20,24 @@ modules: [
 
 4) Install Tailwind CSS with Nuxt: https://tailwindcss.com/docs/guides/nuxtjs
 
-5) Add to tailwind.config.js
+5) Add to `tailwind.config.js`
 ```javascript
 plugins: [require('tailwindcss-primeui')]
 ```
 
-5) Create assets/tailwind.css
+5) Create `assets/tailwind.css`
 ```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
 
-6) Add to nuxt.config.js
+6) Add to `nuxt.config.js`
 ```javascript
 css: ['~/assets/tailwind.css']
 ```
 
-7) Add theme to nuxt.config.js
+7) Add theme to `nuxt.config.js`
 ```javascript
 import Aura from '@primevue/themes/aura';
 
@@ -53,12 +53,12 @@ primevue: {
 }
 ```
 
-8) Copy src/assets file and paste them to assets folder
+8) Copy `src/assets` file and paste them to `assets` folder and add to `nuxt.config.js`
 ```javascript
 css: ['~/assets/styles.scss']
 ```
 
-9) Change app.vue
+9) Change `app.vue`
 ```javascript
 <template>
     <NuxtLayout>
@@ -67,8 +67,8 @@ css: ['~/assets/styles.scss']
 </template>
 ```
 
-10) Create layouts/default.vue and paste this code and replace router-view with NuxtPage in AppLayout.vue
-```javascript
+10) Create `layouts/default.vue` and paste this code and replace `router-view` with `NuxtPage` in `AppLayout.vue`
+```html
 <script setup>
 import AppLayout from './AppLayout.vue';
 </script>
@@ -79,7 +79,7 @@ import AppLayout from './AppLayout.vue';
 
 ```
 
-11) Create layouts folder and copy src/layout folder and paste it to layouts folder and create composables/use-layout.js and replca it with composables/layout.js and then remove these lines
+11) Create `layouts` folder and copy `src/layout` folder and paste it to `layouts` folder and create `composables/use-layout.js` and replace it with `composables/layout.js` and then remove these lines
 ```javascript
 import { useLayout } from '@/layout/composables/layout';
 ```
