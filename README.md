@@ -59,7 +59,7 @@ css: ['~/assets/styles.scss']
 ```
 
 9) Change `app.vue`
-```javascript
+```html
 <template>
     <NuxtLayout>
         <NuxtPage />
