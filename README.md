@@ -79,7 +79,7 @@ import AppLayout from './AppLayout.vue';
 
 ```
 
-11) Create `layouts` folder and copy `src/layout` folder and paste it to `layouts` folder and create `composables/use-layout.js` and replace it with `composables/layout.js` and then remove these lines
+11) Create `layouts` folder and copy `src/layout` folder and paste it to `layouts` folder and create `composables/use-layout.js` and replace it with `src/layout/composables/layout.js` and then remove these lines
 ```javascript
 import { useLayout } from '@/layout/composables/layout';
 ```
