@@ -1,5 +1,9 @@
+<script setup></script>
+
 <template>
-  <div>
-    <Button label="Test" />
-  </div>
+    <NuxtLayout>
+        <NuxtPage />
+    </NuxtLayout>
 </template>
+
+<style lang="scss"></style>

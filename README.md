@@ -50,3 +50,40 @@
         }
     }
 ```
+
+8) Copy src/assets file and paste them to assets folder
+```javascript
+    css: ['~/assets/styles.scss']
+```
+
+9) Change app.vue
+```javascript
+    <template>
+        <NuxtLayout>
+            <NuxtPage />
+        </NuxtLayout>
+    </template>
+```
+
+10) Create layouts/default.vue and paste this code and replace router-view with NuxtPage in AppLayout.vue
+```javascript
+    <script setup>
+import AppLayout from './AppLayout.vue';
+</script>
+
+<template>
+    <AppLayout></AppLayout>
+</template>
+
+```
+
+11) Create layouts folder and copy src/layout folder and paste it to layouts folder and create composables/use-layout.js and replca it with composables/layout.js and then remove these lines
+```javascript
+    import { useLayout } from '@/layout/composables/layout';
+```
+
+12) Copy public/demo folder and paste it to public folder
+Copy src/components folder and paste it to components folder
+Copy src/service folder and paste it to service folder
+Copy src/views/uikit folder and paste it to pages/uikit folder
+Copy src/views/pages folder and paste it to pages folder

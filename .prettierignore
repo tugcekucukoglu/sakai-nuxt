@@ -9,4 +9,3 @@ node_modules
 dist
 .nuxt
 .output
-assets/demo/flags
