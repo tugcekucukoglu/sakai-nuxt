@@ -84,8 +84,9 @@ import AppLayout from './AppLayout.vue';
 import { useLayout } from '@/layout/composables/layout';
 ```
 
-12) Copy public/demo folder and paste it to public folder
-Copy src/components folder and paste it to components folder
-Copy src/service folder and paste it to service folder
-Copy src/views/uikit folder and paste it to pages/uikit folder
-Copy src/views/pages folder and paste it to pages folder
+12) Copy the following folders:
+* `public/demo` → `public` folder
+* `src/components` → `components` folder
+* `src/service` → `service` folder
+* `src/views/uikit` → `pages/uikit` folder
+* `src/views/pages` → `pages` folder
